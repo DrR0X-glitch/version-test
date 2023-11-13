@@ -1,0 +1,9 @@
+site_name: My Docs
+theme:
+  name: material
+extra:
+  version:
+    provider: mike
+plugins:
+  - mike:
+      canonical_version: stable
