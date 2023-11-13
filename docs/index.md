@@ -1,8 +1,8 @@
 # Welcome to MkDocs
 
-This is version 0.1 the first version.
+This is version 0.2 the second version.
 
-changes
+changes made
 
 ## Commands
 
