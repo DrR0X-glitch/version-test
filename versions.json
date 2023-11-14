@@ -1,10 +1,10 @@
 [
   {
     "version": "0.4",
-    "title": "stable",
+    "title": "beta",
     "aliases": [
-      "stable",
-      "beta"
+      "beta",
+      "stable"
     ]
   },
   {
