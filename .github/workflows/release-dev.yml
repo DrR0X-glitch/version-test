@@ -47,7 +47,7 @@ jobs:
           mike deploy -p -u ${{ inputs.new_version }} beta -t beta
       - name: Merge beta branch with stable
         run: |
-          git checkout origin/stable
+          git checkout stable
           git pull
-          git merge beta -m "Releaseing Beta Version"
+          git merge beta -m "Releasing Beta Version"
           git push
