@@ -1,4 +1,4 @@
-name: Overwrite Dev Version
+name: Overwrite Beta Version
 on:
   push:
     branches:
@@ -20,8 +20,8 @@ jobs:
           git fetch origin gh-pages --depth=1
           git config user.name ci-bot
           git config user.email ci-bot@example.com
-      - name: Get current dev version number
+      - name: Get current beta version number
         run: |
-          echo "version=$(mike list dev | awk -F'[()]' '{print $2}')" >> $GITHUB_ENV
+          echo "version=$(mike list beta | awk -F'[()]' '{print $2}')" >> $GITHUB_ENV
       - run: |
-          mike deploy -u -p ${{ env.version }} dev -t dev
+          mike deploy -u -p ${{ env.version }} beta -t beta
