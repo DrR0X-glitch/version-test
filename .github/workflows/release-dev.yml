@@ -26,9 +26,10 @@ jobs:
           python-version: 3.x
           cache: "pip"
       - run: pip install -r requirements.txt
-      - name: Fetch full gh-pages branch and create user
+      - name: Fetch full gh-pages and stable branches and create user
         run: |
           git fetch origin gh-pages --depth=1
+          git fetch origin stable --depth=1
           git config user.name ci-bot
           git config user.email ci-bot@example.com
       - name: Get version numbers
@@ -46,5 +47,5 @@ jobs:
           mike deploy -p -u ${{ inputs.new_version }} beta -t beta
       - name: Merge beta branch with stable
         run: |
-          git checkout stable
+          git checkout origin/stable
           git merge beta
