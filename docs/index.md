@@ -1,6 +1,6 @@
 # Welcome to MkDocs
 
-This is version 0.2 the second version.
+This is version 0.3 the third version.
 
 changes made
 
