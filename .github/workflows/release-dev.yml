@@ -10,10 +10,6 @@ on:
         description: "I have set this workflow to run from the beta branch"
         required: true
         type: boolean
-      confirm_branch_merge:
-        description: "I will merge the beta branch and checkout a new beta branch after this workflow completes"
-        required: true
-        type: boolean
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -42,3 +38,7 @@ jobs:
       - name: Deploy copy of beta with incremented version number for development
         run: |
           mike deploy -p -u ${{ env.new_beta_version }} beta -t beta
+      - name: Merge beta branch with stable
+        run: |
+          git checkout stable
+          git merge beta
