@@ -48,4 +48,6 @@ jobs:
       - name: Merge beta branch with stable
         run: |
           git checkout origin/stable
-          git merge beta
+          git pull
+          git merge beta -m "Releaseing Beta Version"
+          git push
