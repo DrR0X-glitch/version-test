@@ -50,5 +50,5 @@ jobs:
           git fetch --unshallow
           git checkout stable
           git pull
-          git merge beta -m "Releasing Beta Version"
+          git merge --no-ff beta -m "Auto-Merge beta into stable"
           git push
