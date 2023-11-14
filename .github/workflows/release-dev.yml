@@ -14,6 +14,8 @@ on:
         description: "The new beta version number"
         required: true
         type: number
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
