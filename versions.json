@@ -8,10 +8,10 @@
   },
   {
     "version": "0.2",
-    "title": "dev",
+    "title": "stable",
     "aliases": [
-      "stable",
-      "dev"
+      "dev",
+      "stable"
     ]
   },
   {
