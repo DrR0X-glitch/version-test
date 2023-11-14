@@ -2,7 +2,7 @@ name: Overwrite Beta Version
 on:
   push:
     branches:
-      - dev
+      - beta
 permissions:
   contents: write
 jobs:
