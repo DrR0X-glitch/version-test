@@ -10,8 +10,8 @@
     "version": "0.2",
     "title": "dev",
     "aliases": [
-      "dev",
-      "stable"
+      "stable",
+      "dev"
     ]
   },
   {
